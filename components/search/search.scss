@@ -1,0 +1,29 @@
+.search {
+    background-color: rgb(71, 142, 45);
+    margin-top: -5px;
+    .search__title {
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        padding: 5px 0;
+    }
+    .search__item {
+        width: 80%;
+        margin: 1% 10%;
+        padding: 5px 0;
+    }
+    .search__details {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    .search-more__container {
+        @media screen and (max-width:768px){
+        display: none;
+            }
+    }
+}
+
+

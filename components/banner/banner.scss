@@ -1,0 +1,72 @@
+.banner {
+    position: relative;
+    max-width: 2400px;
+    z-index: -1;
+    .banner__title {
+        position: absolute;
+        top: 160px;
+        left: 400px;
+        font-size: 48px;
+        color: #fff;
+        text-transform: uppercase;
+        z-index: 3;
+    @media screen and (max-width:768px){
+                left: 50px;
+                top: 300px;
+                font-size: 33px;
+            }
+    }
+    .banner__text {
+        position: absolute;
+        bottom: 130px;
+        left: 400px;
+        color: #fff;
+        font-size: 18px;
+        z-index: 3;
+    @media screen and (max-width:768px){
+                display: none;
+            }
+    }
+    .banner__button {
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(71, 142, 45);
+        position: absolute;
+        left: 400px;
+        bottom: 60px;
+        width: 185px;
+        height: 51px;
+        font-size: 18px;
+        color: #fff;
+        z-index: 3;
+    @media screen and (max-width:768px){
+                left: 50px;
+            }
+    }
+    .banner__slider  {
+       max-width: 100%;
+        overflow: hidden;
+        .slider--img {
+            position: relative;
+            left: -900px;
+            @media screen and (min-width:770px){
+                width: 100%;
+                left: 0;
+            }
+        }
+            @media screen and (min-width:770px){
+               height: 100%;
+            }
+        .slider--background {
+            position: absolute;
+            height: inherit;
+            top: 0;
+            right: 0;
+            opacity: 0.6;
+        }
+    }
+}
+
+
+
+

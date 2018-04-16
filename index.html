@@ -4,9 +4,148 @@
        <meta charset = "utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <title>Skoda main</title>
     </head>
     <body>
-        
+       <header>
+            <div class="container">
+            <div class="logo">
+                <img class="logo__image" src="components/nav/img/Vector%20Smart%20Object.png" alt ="logo_skoda">
+                <hr>
+                <p class="logo__text">Włodzimierz<br> Bieranowski</p>
+            </div>
+            
+            <nav>
+               <ul class="nav__list">
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Samochody nowe</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Samochody używane</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Odkup aut</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">O nas</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+            <div class="hamburger__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+             </div>   
+            </div>
+    
+                <div class="nav__contact">
+                   <hr>
+                    <i class="fas fa-volume-up"></i>
+                    <p class="nav__contact--item"><span>+ 52</span> 320 56 50</p>
+                </div>
+            </div>
+       </header>
+           
+            <section class="contact-box">
+                   <ul class="contact-box__container" id="contact-box">
+                    <li class="contact-box--item call"><a href="#" class="contact-box--link"><i class="fas fa-phone-square"></i>Zadzwoń</a></li>
+                    <li class="contact-box--item directions"><a href="#" class="contact-box--link"><i class="fas fa-map-marker"></i>Jak dojechać</a></li>
+                    <li class="contact-box--item facebook"><a href="#" class="contact-box--link"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                   </ul>
+            </section>
+            <section class="banner">
+               <h1 class="banner__title">Nowa Skoda Citigo</h1>
+               <h4 class="banner__text">Już jest w naszym salonie</h4>
+               <button class="banner__button">więcej informacji</button>
+                <div class="banner__slider">
+                <img class="slider--img" src="components/banner/img/Layer%204.png">
+                <img class="slider--background" src="components/banner/img/Layer%201.png">
+                </div>
+<!--
+                <div class="banner__slider"><img class="slider--img" src="components/banner/img/Layer%204.png"></div>
+                <div class="banner__slider"><img class="slider--img" src="components/banner/img/Layer%204.png"></div>
+-->
+            </section>
+            
+            <section class="search">
+                <h2 class="search__title">Wyszukaj w ofercie</h2>
+                <select name="Marka" class="search__item"> 
+                  <option value="value1">Skoda</option> 
+                  <option value="value2">Fiat</option>
+                  <option value="value3">Volvo</option>
+                </select>
+                <select name="Model" class="search__item"> 
+                  <option value="value1">Octavia</option> 
+                  <option value="value2">Citigo</option>
+                  <option value="value3">Fabia</option>
+                </select>
+                <p class="search__details">więcej szczegółów</p>
+                <div class="search-more__container">
+                    <div class="search-more__item">
+                <select name="text" class="search__item"> 
+                  <option value="value1">Typ nadwozia</option> 
+                </select>
+                    </div>
+                    <div class="search-more__item">
+                        <h3 class = "search-more--title">Rocznik: 2008 - 2012</h3>
+                    </div>
+                    <div class="search-more__item">
+                        <h3 class = "search-more--title">Przebieg (km): 100-200 tyś</h3>
+                    </div>
+                    <div class="search-more__item">
+                        <h3 class = "search-more--title">Cena: 8534-12303 zł</h3>
+                    </div>
+                    <div class="search-more__item">
+                        <input type="checkbox" id="benzyna" name="subscribe" value="fuelType">
+                        <label for="subscribeNews">benzyna</label>
+                        <input type="checkbox" id="diesel" name="subscribe" value="fuelType">
+                        <label for="subscribeNews">diesiel</label>
+                    </div>
+                    <div class="search-more__item">
+                        <input type="checkbox" id="automat" name="subscribe" value="gears">
+                        <label for="subscribeNews">automat</label>
+                        <input type="checkbox" id="manual" name="subscribe" value="gears">
+                        <label for="subscribeNews">manual</label>
+                    </div>
+                     <div class="search-more__item empty">
+                        
+                    </div>
+                     <div class="search-more__item">
+                        <h3 class = "search-more--title">Rata: 534-7303zł/m-c</h3>
+                    </div>
+                </div>
+                <button class="search__button">Szukaj</button>
+            </section>
+            <section class="cars-slider">
+                
+            </section>
+            <section class="search-results">
+                
+            </section>
+            <footer>
+                <div class="footer__element">
+                    <h5 class="footer--title">Na skróty</h5>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Samochody nowe</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Samochody używane</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Odkup aut</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">O nas</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Kontakt</a></li>
+                </div>
+                <div class="footer__element">
+                    <h5 class="footer--title">Społeczności</h5>
+                    <h5 class="footer--title">Informacje o stronie</h5>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Regulamin użytkowania strony</a></li>
+                </div>
+                <div class="footer__element">
+                    <h5 class="footer--title">Szybki kontakt</h5>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">+52 320 56 50</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">salon@bieranowski.pl</a></li>
+                    <h5 class="footer--title">Dojazd</h5>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Al.Jana Pawła II 127, 85-140 Bydgoszcz</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Zobacz jak do nas dojechać</a></li>
+                </div>
+                 <div class="footer__element">
+                    <h5 class="footer--title">Informacje o stronie</h5>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__manu--item">Regulamin użytkowania strony</a></li>
+                </div>
+            </footer>
+            <script src="scripts/nav.js"></script>
     </body>
 </html>
