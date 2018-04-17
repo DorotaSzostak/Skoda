@@ -63,6 +63,7 @@
             </section>
             
             <section class="search">
+               <div class="search__container">
                 <h2 class="search__title">Wyszukaj w ofercie</h2>
                 <select name="Marka" class="search__item"> 
                   <option value="value1">Skoda</option> 
@@ -75,6 +76,7 @@
                   <option value="value3">Fabia</option>
                 </select>
                 <p class="search__details">więcej szczegółów</p>
+                </div>
                 <div class="search-more__container">
                     <div class="search-more__item">
                 <select name="text" class="search__item"> 
@@ -90,6 +92,9 @@
                     <div class="search-more__item">
                         <h3 class = "search-more--title">Cena: 8534-12303 zł</h3>
                     </div>
+                </div> 
+
+                <div class="search-more__container">
                     <div class="search-more__item">
                         <input type="checkbox" id="benzyna" name="subscribe" value="fuelType">
                         <label for="subscribeNews">benzyna</label>
@@ -109,7 +114,10 @@
                         <h3 class = "search-more--title">Rata: 534-7303zł/m-c</h3>
                     </div>
                 </div>
-                <button class="search__button">Szukaj</button>
+                <div class="search__button">
+                    <button class="search__button--item">szukaj</button>
+                </div>
+                
             </section>
             <section class="cars-slider">
                 
@@ -117,33 +125,55 @@
             <section class="search-results">
                 
             </section>
+                           <hr>
             <footer>
+
                 <div class="footer__element">
                     <h5 class="footer--title">Na skróty</h5>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Samochody nowe</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Samochody używane</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Odkup aut</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">O nas</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Kontakt</a></li>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Samochody nowe</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Samochody używane</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Odkup aut</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">O nas</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Kontakt</a></li>
+                    </ul>
+
                 </div>
                 <div class="footer__element">
                     <h5 class="footer--title">Społeczności</h5>
+                    <ul>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/fb.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/yt.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/twitter.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/pin.png" alt="facebook icon"></a></li>
+                    </ul>
                     <h5 class="footer--title">Informacje o stronie</h5>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Polityka prywatności</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Regulamin użytkowania strony</a></li>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Regulamin użytkowania strony</a></li>                   
+                    </ul>
+
                 </div>
                 <div class="footer__element">
                     <h5 class="footer--title">Szybki kontakt</h5>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">+52 320 56 50</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">salon@bieranowski.pl</a></li>
+                   <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="fas fa-phone-volume"></i>+52 320 56 50</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="far fa-envelope"></i>salon@bieranowski.pl</a></li>                  
+                   </ul>
                     <h5 class="footer--title">Dojazd</h5>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Al.Jana Pawła II 127, 85-140 Bydgoszcz</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Zobacz jak do nas dojechać</a></li>
+                    <ul>                    
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="fas fa-home"></i>Al.Jana Pawła II 127, 85-140 Bydgoszcz</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item directions">Zobacz jak do nas dojechać</a></li>
+                    </ul>
+
                 </div>
                  <div class="footer__element">
                     <h5 class="footer--title">Informacje o stronie</h5>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Polityka prywatności</a></li>
-                    <li class="footer__menu"><a href="#" class="footer__manu--item">Regulamin użytkowania strony</a></li>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Regulamin użytkowania strony</a></li>                      
+                    </ul>
+
                 </div>
             </footer>
             <script src="scripts/nav.js"></script>

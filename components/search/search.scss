@@ -1,29 +1,91 @@
 .search {
-    background-color: rgb(71, 142, 45);
     margin-top: -5px;
-    .search__title {
-        font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    .search__container {
+        background-color: rgb(71, 142, 45);
         text-align: center;
+    .search__title {
         color: #fff;
+        font-size: 30px;
+        display: inline-block;
+        width: 20%;
+        padding: 1%;
+        text-align: center;
+        @media screen and (max-width:768px){
         padding: 5px 0;
+        width: 100%;
+        }
     }
     .search__item {
+        width: 20%;
+        margin: 1%;
+        padding: 8px 0;
+        @media screen and (max-width:768px){
         width: 80%;
         margin: 1% 10%;
-        padding: 5px 0;
+        }
     }
     .search__details {
         font-size: 18px;
         color: #fff;
-        text-align: center;
         text-decoration: underline;
         text-underline-position: under;
+        display: inline-block;
+        width: 20%;
+        padding: 1%;
+        text-align: center;
+        @media screen and (max-width:768px){
+            width: 100%;
+        }
     }
+    }
+
+    
     .search-more__container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #d8d8d8;
+        &:nth-of-type(3){
+        background-color: #eaeaea;
+        }
+        .search-more__item {
+            text-align: center;
+            flex-basis: 20%;
+            margin: 1%;
+            padding: 8px 0;
+            .search__item {
+                width: 100%;
+                padding: 8px 0;
+            }
+        }
+        
+    @media screen and (max-width:768px){
+        display: none;
+            }
+
+    } 
+
+    .search__button {
+        width: 20%;
+        align-self: flex-end;
+        margin: 1% 0;
+        .search__button--item{
+          background-color: rgb(200, 2, 2);
+          width: 88px;
+          height: 39px;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+        }
+        
         @media screen and (max-width:768px){
         display: none;
             }
     }
+
 }
 
 
