@@ -1,0 +1,29 @@
+@mixin credit-label {
+    .credit-label {
+    display: flex;
+    position: relative;
+    top: 40px;
+    right: 0px;
+    color: #fff;
+        width: inherit;
+    .credit-label--background{
+        width: 100%;;
+    }
+    .credit-label--text {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .credit-label--rate {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        font-size: 48px;
+        font-weight: bold;
+    }
+}
+}

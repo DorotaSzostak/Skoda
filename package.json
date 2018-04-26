@@ -1,0 +1,19 @@
+{
+  "name": "skoda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DorotaSzostak/Skoda.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DorotaSzostak/Skoda/issues"
+  },
+  "homepage": "https://github.com/DorotaSzostak/Skoda#readme"
+}

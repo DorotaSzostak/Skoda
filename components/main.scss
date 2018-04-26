@@ -1,10 +1,14 @@
 //tools
 @import "../tools/reset";
+@import "../tools/mixins";
 
 //components
 
 @import "banner/banner";
+@import "cars-slider/cars-slider";
 @import "contact-box/contact-box";
 @import "footer/footer";
 @import "nav/nav";
 @import "search/search";
+@import "search-results/search-results";
+@import "sorting/sorting";

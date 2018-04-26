@@ -4,6 +4,8 @@
        <meta charset = "utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <title>Skoda main</title>
@@ -120,12 +122,120 @@
                 
             </section>
             <section class="cars-slider">
-                
+                  <div class="cars-slider--item"><img src="components/cars-slider/img/Layer%205.png" alt="skoda yeti"><div class="price-box"><h2 class="price-box__price">64 500 zł</h2><p class="price-box__description">SKODA Yeti 1,4 TDI<span>1.4 TSI(125KM), 21 000km, 2015 r, diesiel, 3 drzwi</span></p></div></div>
+                  <div class="cars-slider--item"><img src="components/cars-slider/img/Layer%206.png" alt="volkswagen"><div class="price-box"><h2 class="price-box__price">64 500 zł</h2><p class="price-box__description">SKODA Yeti 1,4 TDI<span>1.4 TSI(125KM), 21 000km, 2015 r, diesiel, 3 drzwi</span></p></div></div>
+                  <div class="cars-slider--item" ><img src="components/cars-slider/img/Layer%205.png" alt="skoda yeti"><div class="price-box"><h2 class="price-box__price">64 500 zł</h2><p class="price-box__description">SKODA Yeti 1,4 TDI<span>1.4 TSI(125KM), 21 000km, 2015 r, diesiel, 3 drzwi</span></p></div></div>
+                  <div class="cars-slider--item"><img src="components/cars-slider/img/Layer%206.png" alt="volkswagen"><div class="price-box"><h2 class="price-box__price">64 500 zł</h2><p class="price-box__description">SKODA Yeti 1,4 TDI<span>1.4 TSI(125KM), 21 000km, 2015 r, diesiel, 3 drzwi</span></p></div></div>
             </section>
             <section class="search-results">
-                
+                <div class="sorting">
+                   <h2 class="sorting__title">Cena</h2>
+                    <select name="price" class="sorting__price">
+                        <option value="rosnąco">Rosnąco</option>
+                        <option value="malejąco">Malejąco</option>
+                    </select>
+                    <h2 class="sorting__title">Rocznik</h2>
+                    <select name="year" class="sorting__year">
+                        <option value="rosnąco">Rosnąco</option>
+                        <option value="malejąco">Malejąco</option>
+                    </select>
+                    <h2 class="sorting__title">Przebieg</h2>
+                    <select name="milage" class="sorting__milage">
+                        <option value="rosnąco">Rosnąco</option>
+                        <option value="malejąco">Malejąco</option>
+                    </select>
+                    <h2 class="sorting__title">Rata</h2>
+                    <select name="credit" class="sorting__credit">
+                        <option value="rosnąco">Rosnąco</option>
+                        <option value="malejąco">Malejąco</option>
+                    </select>
+                </div>
+                <div class="search-results__item">
+                    <img  class="search-results__item--image" src="components/search/img/Layer%2010.png" alt="car">
+                    <div class="search-results__item--text">
+                        <p class="price">64 500 zł</p>
+                        <p class="model">SKODA Yeti 1,4 TDI</p>
+                        <p class="description">1,4 TSI (125KM),SUV, 1390cm3 diesel, manual<span class="milage">121 000km</span></p>
+                    </div>
+                    <div class="search-results__item--buttons">
+                        <img class="background" src="components/search/img/Shape%2031.png" alt="background shape">
+                        <div class="credit-label">
+                        <img class="credit-label--background" src="components/search/img/Layer%207.png">
+                        <p class="credit-label--text">Rata miesięczna już od</p>
+                        <p class="credit-label--rate">1240 zł</p>
+                        </div>
+                        <button class="small">więcej informacji</button>
+                    </div>
+                </div>
+                   <div class="search-results__item">
+                   <img  class="search-results__item--image" src="components/search/img/Layer%205.png" alt="car">
+                    <div class="search-results__item--text">
+                        <p class="price">74 500 zł</p>
+                        <p class="model">SKODA Yeti 1,4 TDI</p>
+                        <p class="description">1,4 TSI (125KM),SUV, 1390cm3 diesel, manual<span class="milage">150 000km</span></p>
+                    </div> 
+                    <div class="search-results__item--buttons">
+                        <img  class="background" src="components/search/img/Shape%2031.png" alt="background shape">
+                        <div class="credit-label">
+                        <img class="credit-label--background" src="components/search/img/Layer%207.png">
+                        <p class="credit-label--text">Rata miesięczna już od</p>
+                        <p class="credit-label--rate">1240 zł</p>
+                        </div>
+                        <button class="small">więcej informacji</button>
+                    </div>                 
+                    </div>
+                   <div class="search-results__item">
+                   <img  class="search-results__item--image" src="components/search/img/Layer%209.png" alt="car">
+                    <div class="search-results__item--text">
+                        <p class="price">74 500 zł</p>
+                        <p class="model">SKODA Yeti 1,4 TDI</p>
+                        <p class="description">1,4 TSI (125KM),SUV, 1390cm3 diesel, manual<span class="milage">150 000km</span></p>
+                    </div> 
+                    <div class="search-results__item--buttons">
+                        <img  class="background" src="components/search/img/Shape%2031.png" alt="background shape">
+                        <div class="credit-label">
+                        <img class="credit-label--background" src="components/search/img/Layer%207.png">
+                        <p class="credit-label--text">Rata miesięczna już od</p>
+                        <p class="credit-label--rate">1240 zł</p>
+                        </div>
+                        <button class="small">więcej informacji</button>
+                    </div>                 
+                    </div>
+                   <div class="search-results__item">
+                   <img  class="search-results__item--image" src="components/search/img/Shape%208.png" alt="car">
+                    <div class="search-results__item--text">
+                        <p class="price">74 500 zł</p>
+                        <p class="model">SKODA Yeti 1,4 TDI</p>
+                        <p class="description">1,4 TSI (125KM),SUV, 1390cm3 diesel, manual<span class="milage">150 000km</span></p>
+                    </div> 
+                    <div class="search-results__item--buttons">
+                        <img class="background" src="components/search/img/Shape%2031.png" alt="background shape">
+                        <div class="credit-label">
+                        <img class="credit-label--background" src="components/search/img/Layer%207.png">
+                        <p class="credit-label--text">Rata miesięczna już od</p>
+                        <p class="credit-label--rate">1240 zł</p>
+                        </div>
+                        <button class="small">więcej informacji</button>
+                    </div>                 
+                    </div>
+                   <div class="search-results__item">
+                   <img  class="search-results__item--image" src="components/search/img/Layer%205.png" alt="car">
+                    <div class="search-results__item--text">
+                        <p class="price">74 500 zł</p>
+                        <p class="model">SKODA Yeti 1,4 TDI</p>
+                        <p class="description">1,4 TSI (125KM),SUV, 1390cm3 diesel, manual<span class="milage">150 000km</span></p>
+                    </div> 
+                    <div class="search-results__item--buttons">
+                        <img class="background" src="components/search/img/Shape%2031.png" alt="background shape">
+                        <div class="credit-label">
+                        <img class="credit-label--background" src="components/search/img/Layer%207.png">
+                        <p class="credit-label--text">Rata miesięczna już od</p>
+                        <p class="credit-label--rate">1240 zł</p>
+                        </div>
+                        <button class="small">więcej informacji</button>
+                    </div>                 
+                    </div>
             </section>
-                           <hr>
             <footer>
 
                 <div class="footer__element">
@@ -177,5 +287,8 @@
                 </div>
             </footer>
             <script src="scripts/nav.js"></script>
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/slick-carousel/slick/slick.js"></script>
+            <script src="scripts/cars-slider.js"></script>
     </body>
 </html>

@@ -1,0 +1,36 @@
+.cars-slider {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    .cars-slider--item {
+        width: 50%;
+        img {
+            width: 100%;
+            border: 6px solid #000;
+            border-bottom: 90px solid #000;
+            box-sizing: border-box;
+        }
+        .price-box {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            padding-left: 40px;
+            color: #fff;
+            bottom: 20px;
+            .price-box__price {
+                font-size: 48px;
+                margin-right: 50px;
+            }
+            .price-box__description {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 18px;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+

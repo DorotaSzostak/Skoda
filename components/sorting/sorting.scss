@@ -1,0 +1,18 @@
+.sorting {
+    max-width: 1600px;
+    margin: 0 auto;
+    border-top: 1px solid #eaeaea;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .sorting__title {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 40px;
+        margin-left: 40px;
+    }
+    select {
+        padding: 5px;
+    }
+}
