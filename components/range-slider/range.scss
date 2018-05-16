@@ -1,0 +1,37 @@
+.ui-slider,
+.ui-slider-horizontal {
+    height: 5px! important;
+    margin-top: 5%! important;
+}
+
+.ui-slider-range,
+.ui-widget-header {
+    background-color: $green! important;
+}
+
+.ui-slider-handle {
+    border-radius: 50%! important;
+    height: 0.8em! important;
+    width: 0.8em! important;
+    background-color: $green! important;
+}
+
+   #amount--price,
+   #amount--km,
+   #amount--year {
+        border: none;
+        background-color: $grey;
+        font-size: 18px;
+        font-family: "SKODANextArabic";
+        font-weight: bold;
+    }
+
+#amount--loan {
+    background-color: $lightgreen! important;
+    font-family: "SKODANextArabic";
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    font-size: 100%;
+}
+

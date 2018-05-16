@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     .search__container {
-        background-color: rgb(71, 142, 45);
+        background-color: $green;
         text-align: center;
     .search__title {
         color: #fff;
@@ -47,19 +47,38 @@
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: #d8d8d8;
+        background-color: $grey;
         &:nth-of-type(3){
-        background-color: #eaeaea;
+        background-color: $lightgrey;
         }
-        .search-more__item {
+        .search-more__item,
+        .search-more__item--empty,
+        .search-more__item--green {
             text-align: center;
-            flex-basis: 20%;
+            flex-basis: 23%;
             margin: 1%;
             padding: 8px 0;
+            font-size: 18px;
+            font-family: "SKODANextArabic";
+            font-weight: bold;
             .search__item {
                 width: 100%;
                 padding: 8px 0;
             }
+                input[type="radio"] {
+                    height: 12px;
+                    width: 12px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 1px solid $grey;
+                    color: $black;
+                }
+        }
+        .search-more__item--green {
+            background-color: $lightgreen;
+            margin: 0;
+            padding: 1%;
+            color: #fff;
         }
         
     @media screen and (max-width:768px){
@@ -87,5 +106,7 @@
     }
 
 }
+
+
 
 

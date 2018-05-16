@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <title>Skoda main</title>
@@ -86,34 +87,50 @@
                 </select>
                     </div>
                     <div class="search-more__item">
-                        <h3 class = "search-more--title">Rocznik: 2008 - 2012</h3>
+                        <p class = "search-more--title">
+                                <label for="amount">Rocznik: </label>
+                                    <input type="text" id="amount--year" />
+                        </p>
+                        <div id="slider-range1"></div>
                     </div>
                     <div class="search-more__item">
-                        <h3 class = "search-more--title">Przebieg (km): 100-200 tyś</h3>
+                       <p class = "search-more--title">
+                                <label for="amount">Przebieg (km): </label>
+                                    <input type="text" id="amount--km" />
+                        </p>
+                        <div id="slider-range2"></div>
                     </div>
                     <div class="search-more__item">
-                        <h3 class = "search-more--title">Cena: 8534-12303 zł</h3>
+                        <p class = "search-more--title">
+                                <label for="amount">Cena:  </label>
+                                <input type="text" id="amount--price" />
+                        </p>
+                        <div id="slider-range3"></div>
                     </div>
                 </div> 
 
                 <div class="search-more__container">
                     <div class="search-more__item">
-                        <input type="checkbox" id="benzyna" name="subscribe" value="fuelType">
+                        <input type="radio" id="benzyna" name="subscribe" value="fuelType" checked>
                         <label for="subscribeNews">benzyna</label>
-                        <input type="checkbox" id="diesel" name="subscribe" value="fuelType">
+                        <input type="radio" id="diesel" name="subscribe" value="fuelType">
                         <label for="subscribeNews">diesiel</label>
                     </div>
                     <div class="search-more__item">
-                        <input type="checkbox" id="automat" name="subscribe" value="gears">
+                        <input type="radio" id="automat" name="subscribe" value="gears" checked>
                         <label for="subscribeNews">automat</label>
-                        <input type="checkbox" id="manual" name="subscribe" value="gears">
+                        <input type="radio" id="manual" name="subscribe" value="gears">
                         <label for="subscribeNews">manual</label>
                     </div>
-                     <div class="search-more__item empty">
+                     <div class="search-more__item--empty">
                         
                     </div>
-                     <div class="search-more__item">
-                        <h3 class = "search-more--title">Rata: 534-7303zł/m-c</h3>
+                     <div class="search-more__item--green">
+                        <p class = "search-more--title">
+                                <label for="amount">Rata: </label>
+                                <input type="text" id="amount--loan" />
+                        </p>
+                        <div id="slider-range4"></div>
                     </div>
                 </div>
                 <div class="search__button">
@@ -287,8 +304,13 @@
                 </div>
             </footer>
             <script src="scripts/nav.js"></script>
-            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+              <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--            <script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+            
+<!--            <script src="node_modules/jquery-ui/ui/jquery-1-7.js"></script>-->
             <script src="node_modules/slick-carousel/slick/slick.js"></script>
+           <script src="scripts/range.js"></script>
             <script src="scripts/cars-slider.js"></script>
     </body>
 </html>

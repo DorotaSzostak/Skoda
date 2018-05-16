@@ -1,6 +1,7 @@
 //tools
 @import "../tools/reset";
 @import "../tools/mixins";
+@import "../tools/colors";
 
 //components
 
@@ -12,3 +13,4 @@
 @import "search/search";
 @import "search-results/search-results";
 @import "sorting/sorting";
+@import "range-slider/range";

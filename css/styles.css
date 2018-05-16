@@ -2,6 +2,10 @@
   font-family: "SKODANextArabic-Regular";
   src: url("../rescources/fonts/SKODANextArabic-Regular.ttf"); }
 
+@font-face {
+  font-family: "SKODANextArabic";
+  src: url("../rescources/fonts/SKODANextArabic.ttf"); }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -481,15 +485,36 @@ footer {
     background-color: #d8d8d8; }
     .search .search-more__container:nth-of-type(3) {
       background-color: #eaeaea; }
-    .search .search-more__container .search-more__item {
+    .search .search-more__container .search-more__item,
+    .search .search-more__container .search-more__item--empty,
+    .search .search-more__container .search-more__item--green {
       text-align: center;
-      -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+      -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
       margin: 1%;
-      padding: 8px 0; }
-      .search .search-more__container .search-more__item .search__item {
+      padding: 8px 0;
+      font-size: 18px;
+      font-family: "SKODANextArabic";
+      font-weight: bold; }
+      .search .search-more__container .search-more__item .search__item,
+      .search .search-more__container .search-more__item--empty .search__item,
+      .search .search-more__container .search-more__item--green .search__item {
         width: 100%;
         padding: 8px 0; }
+      .search .search-more__container .search-more__item input[type="radio"],
+      .search .search-more__container .search-more__item--empty input[type="radio"],
+      .search .search-more__container .search-more__item--green input[type="radio"] {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #d8d8d8;
+        color: #000000; }
+    .search .search-more__container .search-more__item--green {
+      background-color: #81b844;
+      margin: 0;
+      padding: 1%;
+      color: #fff; }
     @media screen and (max-width: 768px) {
       .search .search-more__container {
         display: none; } }
@@ -616,3 +641,35 @@ footer {
     margin-left: 40px; }
   .sorting select {
     padding: 5px; }
+
+.ui-slider,
+.ui-slider-horizontal {
+  height: 5px !important;
+  margin-top: 5% !important; }
+
+.ui-slider-range,
+.ui-widget-header {
+  background-color: #478e2d !important; }
+
+.ui-slider-handle {
+  border-radius: 50% !important;
+  height: 0.8em !important;
+  width: 0.8em !important;
+  background-color: #478e2d !important; }
+
+#amount--price,
+#amount--km,
+#amount--year {
+  border: none;
+  background-color: #d8d8d8;
+  font-size: 18px;
+  font-family: "SKODANextArabic";
+  font-weight: bold; }
+
+#amount--loan {
+  background-color: #81b844 !important;
+  font-family: "SKODANextArabic";
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  font-size: 100%; }
