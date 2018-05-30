@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    color: $almostBlack;
     .sorting__title {
         font-size: 24px;
         font-weight: bold;
@@ -15,4 +17,20 @@
     select {
         padding: 5px;
     }
+    @media screen and (max-width: 480px){
+        justify-content: flex-end;
+        padding: 20px;
+        .sorting__title {
+            padding: 0 30px;
+            margin: 4% 0;
+            margin-right: 15%;
+        }
+        select {
+            margin: 4% 0;
+            padding: 5px 10px;
+        }
+    }
+
 }
+
+

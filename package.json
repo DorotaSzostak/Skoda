@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DorotaSzostak/Skoda/issues"
   },
-  "homepage": "https://github.com/DorotaSzostak/Skoda#readme"
+  "homepage": "https://github.com/DorotaSzostak/Skoda#readme",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
 }

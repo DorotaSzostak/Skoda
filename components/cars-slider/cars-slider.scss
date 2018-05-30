@@ -9,7 +9,11 @@
             border: 6px solid #000;
             border-bottom: 90px solid #000;
             box-sizing: border-box;
-        }
+                @media screen and (max-width: 480px){
+                    border: 10px solid #000;
+                    border-bottom: 160px solid #000;
+                }
+            }
         .price-box {
             position: absolute;
             width: 100%;
@@ -30,7 +34,15 @@
                     font-size: 12px;
                 }
             }
+                @media screen and (max-width: 480px){
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 160px;
+                    bottom: 0;
+                    .price-box__price {
+                        font-size: 46px;
+                        }
+                    }
+                }
         }
     }
-}
-

@@ -6,5 +6,16 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
       dots: false,
       arrows: true,
+      responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false
+      }
+    }
+    ]
   });
 });
