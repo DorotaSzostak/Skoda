@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+       <meta charset = "utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCp60AOqEgtmbey9b87nYS7YrTC9lqo32A&callback=initMap"
+  type="text/javascript"></script>
+        <title>Skoda main</title>
+    </head>
+    <body>
+    <header>
+            <div class="container">
+            <div class="logo">
+                <img class="logo__image" src="components/nav/img/Vector%20Smart%20Object.png" alt ="logo_skoda">
+                <hr>
+                <p class="logo__text">Włodzimierz<br> Bieranowski</p>
+            </div>
+            
+            <nav>
+               <ul class="nav__list">
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Samochody nowe</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Samochody używane</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Odkup aut</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">O nas</a></li>
+                <li class="nav__menu"><a href="#" class="nav__menu--item">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+            <div class="hamburger__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+             </div>   
+            </div>
+    
+                <div class="nav__contact">
+                   <hr>
+                    <i class="fas fa-volume-up"></i>
+                    <p class="nav__contact--item"><span>+ 52</span> 320 56 50</p>
+                </div>
+            </div>
+       </header>
+           
+            <section class="contact-box">
+                   <ul class="contact-box__container" id="contact-box">
+                    <li class="contact-box--item call"><a href="#" class="contact-box--link"><i class="fas fa-phone-square"></i>Zadzwoń</a></li>
+                    <li class="contact-box--item directions"><a href="#" class="contact-box--link"><i class="fas fa-map-marker"></i>Jak dojechać</a></li>
+                    <li class="contact-box--item facebook"><a href="#" class="contact-box--link"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                   </ul>
+            </section>
+            <section class="map">
+                <div class="map__element" id="map"></div>
+            </section>
+            <section class="contact">
+                <div class="contact__form">
+                    <h2 class="contact__title">Formularz zapytaniowy:</h2>
+                    <div class="contact__form--left">
+                    <input type ="text" class="contact__input" name="name" placeholder="Imię" required>
+                    <label class="contact__label" for="name">(wymagane)</label>
+                    <input type ="text" class="contact__input" name="company" placeholder="Firma">
+                    <label class="contact__label" for="company">(opcjonalnie)</label>
+                    </div>
+                    <div class="contact__form--right">
+                    <input type ="number" class="contact__input" name="phone" placeholder="Telefon kontaktowy">
+                    <input type ="email" class="contact__input" name="email" placeholder="e-mail">
+                    <label class="contact__label" for="email">(w celu ułatwienia kontaktu prosimy o wypełnienie obu pól kontaktowych, jednak wymagana jest przynajmniej jedna z opcji - emial lub telefon)</label>
+                    </div>
+                    <input type ="text" class="contact__input--text" name="question" placeholder="Zapytanie" required>
+                    <button class="contact__button">wyślij</button>
+                </div>
+                <div class="contact__info">
+                   <div class="contact__info--left">
+                       <h2 class="contact__title">Dane kontaktowe:</h2>
+                   </div>
+                    <div class="contact__info--right">
+                        <h2 class="contact__title">Godziny otwarcia:</h2>
+                    </div>
+                </div>
+            </section>
+               <hr>
+                <footer>
+
+                <div class="footer__element">
+                    <h5 class="footer--title">Na skróty</h5>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Samochody nowe</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Samochody używane</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Odkup aut</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">O nas</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Kontakt</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer__element">
+                    <h5 class="footer--title">Społeczności</h5>
+                    <ul>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/fb.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/yt.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/twitter.png" alt="facebook icon"></a></li>
+                        <li class="footer__menu social"><a href="#" class="footer__menu--item"><img src="components/footer/img/pin.png" alt="facebook icon"></a></li>
+                    </ul>
+                    <h5 class="footer--title">Informacje o stronie</h5>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Regulamin użytkowania strony</a></li>                   
+                    </ul>
+
+                </div>
+                <div class="footer__element">
+                    <h5 class="footer--title">Szybki kontakt</h5>
+                   <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="fas fa-phone-volume"></i>+52 320 56 50</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="far fa-envelope"></i>salon@bieranowski.pl</a></li>                  
+                   </ul>
+                    <h5 class="footer--title">Dojazd</h5>
+                    <ul>                    
+                    <li class="footer__menu"><a href="#" class="footer__menu--item"><i class="fas fa-home"></i>Al.Jana Pawła II 127, 85-140 Bydgoszcz</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item directions">Zobacz jak do nas dojechać</a></li>
+                    </ul>
+
+                </div>
+                 <div class="footer__element">
+                    <h5 class="footer--title">Informacje o stronie</h5>
+                    <ul>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Polityka prywatności</a></li>
+                    <li class="footer__menu"><a href="#" class="footer__menu--item">Regulamin użytkowania strony</a></li>                      
+                    </ul>
+
+                </div>
+        </footer>
+        <script src="scripts/map.js"></script>
+    </body>
+</html>
