@@ -40,7 +40,6 @@
         }
     }
     }
-
     
     .search-more__container {
         display: flex;
@@ -86,6 +85,10 @@
             }
 
     } 
+    
+        .inactive {
+        display: none;
+    }
 
     .search__button {
         width: 20%;
@@ -104,7 +107,6 @@
         display: none;
             }
     }
-
 }
 
 

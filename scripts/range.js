@@ -1,4 +1,16 @@
-  $( function() {
+var moreBtn = document.querySelector(".search__details");
+var rangeContainer = document.querySelectorAll(".search-more__container");
+var searchBtn = document.querySelector(".search__button")
+
+moreBtn.addEventListener('click', function(){
+    rangeContainer.forEach(el => el.classList.toggle("inactive"));
+//    for(var i =0; i< rangeContainer.length; i++){
+//        rangeContainer[i].classList.toggle("inactive")
+//    }
+    searchBtn.classList.toggle("inactive")
+});
+
+$( function() {
     $( "#slider-range1" ).slider({
       range: true,
       min: 1990,

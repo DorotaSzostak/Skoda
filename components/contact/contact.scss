@@ -1,10 +1,10 @@
 .contact {
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 40px;
     color: $almostBlack;
     .contact__form {
-        max-width: 50%;
+        max-width: 48%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -12,6 +12,7 @@
         margin-right: 2%;
         .contact__title {
             width: 100%;
+            font-size: 24px;
         }
         .contact__form--left,
         .contact__form--right {
@@ -24,6 +25,11 @@
             padding: 2%;
             margin-top: 10px;
             margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .contact__label {
+            font-size: 12px;
+            text-align: center;
         }
         .contact__input--text {
             flex-basis: 100%;
@@ -31,6 +37,7 @@
             padding: 1% 0 20% 1%;
             margin-top: 10px;
             margin-bottom: 5px;
+            font-size: 16px;
         }
         .contact__button {
             background-color: rgb(200, 2, 2);
@@ -41,6 +48,10 @@
             color: #fff;
             margin: 0 auto;
         }
+    @media screen and (max-width:768px){
+        max-width: 100%;
+        padding-bottom: 5%;
+            }
     }
     .contact__info {
         display: flex;
@@ -48,5 +59,41 @@
         justify-content: space-around;
         flex-basis: 50%;
         border-left: 2px solid $grey;
+        .contact__title {
+            font-size: 24px;
+            padding-bottom: 34px;
+        }
+        .contact__title--small {
+            text-transform: uppercase;
+        }
+        .contact__text {
+            padding-bottom: 34px;
+            font-size: 18px;
+            line-height: 110%;
+        }
+        .contact__table {
+            td {
+                padding: 5px;
+            }
+        }
+   @media screen and (max-width:768px){
+        flex-basis: 100%;
+       border: none;
+            }
+   @media screen and (max-width:768px){
+        flex-direction: column;
+            }
     }
+      @media screen and (max-width:768px){
+        flex-wrap: wrap;
+            }
 }
+
+
+
+
+
+
+
+
+
