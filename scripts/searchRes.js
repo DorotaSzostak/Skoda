@@ -30,6 +30,7 @@ const cars = [
 ]
 
 const resultSection = document.querySelector('.search-results__item');
+const carItem = resultSection.children;
 
 const renderCars = cars => {
     const markup = `
@@ -49,6 +50,9 @@ const renderCars = cars => {
                         <button class="small">więcej informacji</button>
                     `
     resultSection.insertAdjacentHTML("beforeend", markup);
+    for(var i=0; i< carItem.length; i++){
+    carItem[i].style.animation = "fadein 2s";
+}
 }
 
 cars.forEach(renderCars)
@@ -79,8 +83,6 @@ const sortValues = (key, order='asc') =>{
 
 const selectedItem = document.querySelectorAll('select')
 selectedItem.forEach(function(val,i){
-    console.log(val.name)
-    console.log(i)
     
     selectedItem[i].addEventListener("change", function(){
     if(selectedItem[i].value === "rosnąco") {
