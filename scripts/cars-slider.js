@@ -5,14 +5,14 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 2000,
       dots: false,
-      arrows: true,
+      arrows: false,
       responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 481,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false
       }
     }

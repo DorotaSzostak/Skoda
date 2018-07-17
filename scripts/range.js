@@ -4,10 +4,12 @@ var searchBtn = document.querySelector(".search__button")
 
 moreBtn.addEventListener('click', function(){
     rangeContainer.forEach(el => el.classList.toggle("inactive"));
-//    for(var i =0; i< rangeContainer.length; i++){
-//        rangeContainer[i].classList.toggle("inactive")
-//    }
     searchBtn.classList.toggle("inactive")
+    if(searchBtn.classList.contains("inactive")){
+       moreBtn.innerHTML = "więcej szczegółów"
+       } else {
+           moreBtn.innerHTML = "mniej szczegółów"
+       }
 });
 
 let newCars = [];
@@ -86,7 +88,6 @@ $( function() {
 
           clearResults();
         if(newCars.length === 0){
-            //stworzyc popUP
             popUp.style.display = "block"
         } else 
          newCars.forEach(renderCars)

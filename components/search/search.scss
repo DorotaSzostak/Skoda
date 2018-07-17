@@ -64,6 +64,10 @@
                 width: 100%;
                 padding: 8px 0;
             }
+               @media screen and (max-width:768px){
+               flex-basis: 80%;
+               margin: 1% 10%;
+            }
                 input[type="radio"] {
                     height: 12px;
                     width: 12px;
@@ -81,7 +85,7 @@
         }
         
     @media screen and (max-width:768px){
-        display: none;
+                padding-bottom: 10px;
             }
 
     } 
