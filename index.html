@@ -57,13 +57,9 @@
                <h4 class="banner__text">Już jest w naszym salonie</h4>
                <button class="banner__button">więcej informacji</button>
                 <div class="banner__slider">
-                <img class="slider--img" src="components/banner/img/Layer%204.png">
-                <img class="slider--background" src="components/banner/img/Layer%201.png">
+                <img class="slider--img" src="components/banner/img/Layer%204.png" alt="car">
+                <img class="slider--background" src="components/banner/img/Layer%201.png" alt="car">
                 </div>
-<!--
-                <div class="banner__slider"><img class="slider--img" src="components/banner/img/Layer%204.png"></div>
-                <div class="banner__slider"><img class="slider--img" src="components/banner/img/Layer%204.png"></div>
--->
             </section>
             
             <section class="search">
@@ -90,21 +86,21 @@
                     </div>
                     <div class="search-more__item">
                         <p class = "search-more--title">
-                                <label for="amount">Rocznik: </label>
+                                <label for="amount--year">Rocznik: </label>
                                     <input type="text" id="amount--year" />
                         </p>
                         <div id="slider-range1"></div>
                     </div>
                     <div class="search-more__item">
                        <p class = "search-more--title">
-                                <label for="amount">Przebieg (km): </label>
+                                <label for="amount--km">Przebieg (km): </label>
                                     <input type="text" id="amount--km" />
                         </p>
                         <div id="slider-range2"></div>
                     </div>
                     <div class="search-more__item">
                         <p class = "search-more--title">
-                                <label for="amount">Cena:  </label>
+                                <label for="amount--price">Cena:  </label>
                                 <input type="text" id="amount--price" />
                         </p>
                         <div id="slider-range3"></div>
@@ -112,23 +108,23 @@
                 </div> 
                 <div class="search-more__container inactive">
                     <div class="search-more__item">
-                        <input type="radio" id="benzyna" name="subscribe" value="fuelType" checked>
-                        <label for="subscribeNews">benzyna</label>
-                        <input type="radio" id="diesel" name="subscribe" value="fuelType">
-                        <label for="subscribeNews">diesiel</label>
+                        <input type="radio" id="benzyna" name="benzyna" value="fuelType" checked>
+                        <label for="benzyna">benzyna</label>
+                        <input type="radio" id="diesel" name="diesel" value="fuelType">
+                        <label for="diesel">diesiel</label>
                     </div>
                     <div class="search-more__item">
-                        <input type="radio" id="automat" name="subscribe" value="gears" checked>
-                        <label for="subscribeNews">automat</label>
-                        <input type="radio" id="manual" name="subscribe" value="gears">
-                        <label for="subscribeNews">manual</label>
+                        <input type="radio" id="automat" name="automat" value="gears" checked>
+                        <label for="automat">automat</label>
+                        <input type="radio" id="manual" name="manual" value="gears">
+                        <label for="manual">manual</label>
                     </div>
                      <div class="search-more__item--empty">
                         
                     </div>
                      <div class="search-more__item--green">
                         <p class = "search-more--title">
-                                <label for="amount">Rata: </label>
+                                <label for="amount--loan">Rata: </label>
                                 <input type="text" id="amount--loan" />
                         </p>
                         <div id="slider-range4"></div>
